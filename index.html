@@ -2,9 +2,42 @@
 <html lang="is">
 <head>
   <meta charset="utf-8">
+  // VANTAR AÐ VELJA FONT OG BÆTA CSS OG grid
+  <link rel="stylesheet" href="src/styles/styles.scss">
+
   <title>Hópverkefni 2</title>
+  <link rel="stylesheet" href="grid.css">
 </head>
 <body>
+  <header class="header header--index">
+    <div class="header__box">
+      <div class="header__content">
+        <h1 class="header__title1">Vefforitun</h1>
+        <h2 class="header__title2">Fyrirlestrar</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <div class="page__content">
+        <div class="page__buttons">
+          <div class="buttons">
+          <button id = "html" class="buttons__button">HTML</button>
+          <button id = "css" class="buttons__button">CSS</button>
+          <button id = "javascript" class="buttons__button">Javascript</button>
+          </div>
+        </div>
+        <div class="page__cards">
+          <div class="list">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./dist/bundle.js"></script>
 
 </body>
 </html>
