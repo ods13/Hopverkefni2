@@ -1,3 +1,30 @@
 .buttons {
-   
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.buttons__button {
+    transition: background-color 300ms ease-in-out;
+    padding: 8px 15px;
+    margin: 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #ccc;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.buttons__button:hover {
+    background-color: #aaa;
+}
+
+.buttons__selected {
+    background-color: #2d2;
+}
+
+.buttons__selected:hover {
+    background-color: #1a1;
 }
