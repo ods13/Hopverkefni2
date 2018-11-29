@@ -2,7 +2,7 @@
 <html lang="is">
 <head> 
   <meta charset="utf-8">
-  // VANTAR AÐ BÆTA CSS OG grid /font er roboto/fyrirsagnir, Lora/meginmál
+
   <link href="https://fonts.googleapis.com/css?family=Lora|Roboto+Mono" rel="stylesheet"> 
   <title>Hópverkefni 2</title>
   <link rel="stylesheet" href="/dist/styles.css">
@@ -12,26 +12,162 @@
   <header>
     <div class="header__box">
       <div class="header__content">
-        <h1 class="header__title1">Fyrirlestrar</h1>
-        <h2 class="header__title2">Vefforitun</h2>
+        <h4 class="header__title1">Vefforitun</h4>
+        <h1 class="header__title2">Fyrirlestrar</h1>
       </div>
     </div>
   </header>
 
-  <nav class="navbar">
-    <button class="navbar__button navbar__HTML">HTML</button>
-    <button class="navbar__button navbar__CSS">CSS</button>
-    <button class="navbar__button navbar__JS">JavaScript</button>
+  <nav class="buttons">
+    <button class="buttons__button buttons__HTML">HTML</button>
+    <button class="buttons__button buttons__CSS">CSS</button>
+    <button class="buttons__button buttons__JS">JavaScript</button>
   </nav>
 
-  <main>
-    <div class="page">
-        <div class="page__cards">
-          <div class="list">
-            
+  <main class="grid">
+    <div class="list grid__row">
+      <a href="./fyrirlestur.html?slug=html-saga" class="siteinfo grid__col-4 html">
+        <img src="./img/thumb1.jpg" class="siteinfo__img">
+        <div class="siteinfo__bottom">
+          <div class="siteinfo__text">
+            <h4 class="siteinfo__info">html</h4>
+            <h1>Sagan</h1>
           </div>
+          <div class="siteinfo__checkmark">✓</div>
         </div>
-      </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=html-element" class="siteinfo grid__col-4 html">
+          <div class="siteinfo__empty"></div>
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">html</h4>
+              <h1>Element</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=html-a11y" class="siteinfo grid__col-4 html">
+          <img src="./img/thumb2.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">html</h4>
+              <h1>Aðgengi</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=css-syntax" class="siteinfo grid__col-4 css">
+          <img src="./img/thumb3.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">css</h4>
+              <h1>Málfræði</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=css-box" class="siteinfo grid__col-4 css">
+          <img src="./img/thumb4.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">css</h4>
+              <h1>Box Model</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=css-flexbox" class="siteinfo grid__col-4 css">
+          <img src="./img/thumb5.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">css</h4>
+              <h1>Flexbox</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=css-responsive" class="siteinfo grid__col-4 css">
+          <img src="./img/thumb6.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">css</h4>
+              <h1>Skalanleg vefhönnun</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-basic" class="siteinfo grid__col-4 javascript">
+          <div class="siteinfo__empty"></div>
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>Gildi, týpur og virkjar</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-programs" class="siteinfo grid__col-4 javascript">
+          <img src="./img/thumb7.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>Forrit</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-functions" class="siteinfo grid__col-4 javascript">
+          <img src="./img/thumb8.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>Föll</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-array" class="siteinfo grid__col-4 javascript">
+          <img src="./img/thumb9.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>Array & objects</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-dom" class="siteinfo grid__col-4 javascript">
+          <div class="siteinfo__empty"></div>
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>DOM & vafrinn</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
+
+        <a href="./fyrirlestur.html?slug=js-example" class="siteinfo grid__col-4 javascript">
+          <img src="./img/thumb10.jpg" class="siteinfo__img">
+          <div class="siteinfo__bottom">
+            <div class="siteinfo__text">
+              <h4 class="siteinfo__info">javascript</h4>
+              <h1>Dæmi</h1>
+            </div>
+            <div class="siteinfo__checkmark">✓</div>
+          </div>
+        </a>
     </div>
   </main>
 
