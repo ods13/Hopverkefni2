@@ -1,4 +1,4 @@
-@import "scss/config";
+@import "config";
 
 * {
   padding: 0;
@@ -26,5 +26,5 @@ img { /* stylelint-disable-line */
 }
 
 // TODO import
-@import "scss/header";
-@import "scss/button";
+@import "header";
+@import "button";

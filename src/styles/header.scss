@@ -1,45 +1,70 @@
-.header {
-    position: relative;
-    margin-bottom: $gutter;
-    width: 100%;
-    height: 50vh;
+header {
+    display: flex;
+    background-image: url("/img/header.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
 
-    &-index {
-        background: url(../img/header.jpg);
-        background-size: cover;
+
+    & .header__box {
+        display: flex;
+        padding: 0 20px;
+        width: 100%;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
-    &-lecture {
-        background: url(../img/code.jpg);
-        background-size: cover;
+    & .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.5rem;
     }
 
-
-    &__box {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        background-color: white;
-    }
-
-    &__content {
-        margin: ($gutter * 2) auto;
-    }
-
-    &__title1 {
+    & .header__title1 {
         margin: auto;
         text-align: center;
         font-family: 'Roboto Mono', monospace;
-        font-size: 3em;
+        font-size: 0.3em;
     }
 
-    &__title2 {
+    & .header__title2 {
         margin: auto;
         text-align: center;
         font-family: 'Roboto Mono', monospace;
         font-size: 1em;
     }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar__button {
+    transition: background-color 300ms ease-in-out;
+    padding: 8px 15px;
+    margin: 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #ccc;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__button:hover {
+    background-color: #aaa;
+}
+
+.navbar__selected {
+    background-color: #2d2;
+}
+
+.navbar__selected:hover {
+    background-color: #1a1;
 }
